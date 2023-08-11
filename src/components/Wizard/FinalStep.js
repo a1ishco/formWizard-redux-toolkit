@@ -9,6 +9,7 @@ const Final = () => {
   const dataCountry = useSelector((state) => state.formWizard.country);
 
 
+
   return (
     <div className="formFinal">
       <table>
@@ -16,7 +17,7 @@ const Final = () => {
     <th>Name Surname</th>
     <th>Email</th>
     <th>Phone number</th>
-    <th>Country</th>
+    <th>Country </th>
   </tr>
   <tr>
     <td>{dataName}</td>
