@@ -2,12 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const Final = () => {
-  const dataName = useSelector((state) => state.formWizard.name);
-  const dataEmail = useSelector((state) => state.formWizard.email);
-  const dataPhone = useSelector((state) => state.formWizard.phone);
-  const dataCode = useSelector((state) => state.formWizard.dialCode);
-  const dataCountry = useSelector((state) => state.formWizard.country);
-
+  
+  const data = useSelector((state)=> state.formWizard)
 
 
   return (
@@ -20,10 +16,10 @@ const Final = () => {
     <th>Country </th>
   </tr>
   <tr>
-    <td>{dataName}</td>
-    <td>{dataEmail}</td>
-    <td>{dataCode+" "+dataPhone}</td>
-    <td>{dataCountry}</td>
+    <td>{data.name}</td>
+    <td>{data.email}</td>
+    <td>{data.dialCode+" "+data.phone}</td>
+    <td>{data.country}</td>
   </tr>
 </table>
     </div>
