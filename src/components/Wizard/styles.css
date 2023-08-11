@@ -1,0 +1,24 @@
+.formName, .formEmail, .formPhone{
+    text-align: center;
+}
+  
+.formFinal{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+table{
+    width: 100%;
+    border:1px solid black;
+  }
+
+  td , th{
+    border: 1px dotted black;
+    width: 25%;
+    text-align: center;
+  }
+
+  td:hover{
+    font-weight: bold;
+}
